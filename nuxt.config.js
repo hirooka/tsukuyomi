@@ -5,6 +5,11 @@ export default {
   publicRuntimeConfig: {
   },
 
+  privateRuntimeConfig: {
+    tsServerUsername: process.env.TS_SERVER_USERNAME || '',
+    tsServerPassword: process.env.TS_SERVER_PASSWORD || ''
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - tsukuyomi',
