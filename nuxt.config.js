@@ -1,6 +1,10 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  // RuntimeConfig
+  publicRuntimeConfig: {
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - tsukuyomi',
@@ -45,7 +49,13 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/api/': process.env.TS_SERVER_URI || 'http://localhost:8081'
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
