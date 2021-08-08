@@ -32,7 +32,7 @@ export default Vue.extend({
     }
   },
   data () {
-    const today = dayjs().format('YYYY-MM-DD')
+    const today = dayjs().format('YYYY-MM-DD (ddd)')
     return {
       date: today,
       headers: [

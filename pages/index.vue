@@ -28,8 +28,7 @@
           <v-spacer />
           <v-btn
             color="primary"
-            nuxt
-            to="/epg"
+            href="/epg"
           >
             Continue
           </v-btn>
