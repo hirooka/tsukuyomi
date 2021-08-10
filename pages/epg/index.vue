@@ -7,6 +7,7 @@
       :items="programs"
       :items-per-page="10"
       class="elevation-1"
+      @click:row="clickEvent"
     ></v-data-table>
   </div>
 </template>
@@ -18,7 +19,7 @@ import logger from '~/plugins/logger'
 export default Vue.extend({
   async asyncData ({ app }) {
     const path = '/api/v1/programs/now'
-    const response = await app.$axios.get(path, { auth: { username: app.$config.tsServerUsername, password: app.$config.tsServerPassword } })
+    const response = await app.$axios.get(path)
     logger.debug(response)
     const data = response.data.map((ele) => {
       const begin = dayjs(ele.begin).format('HH:mm')
@@ -41,6 +42,13 @@ export default Vue.extend({
         { text: '開始', value: 'begin' },
         { text: '終了', value: 'end' }
       ]
+    }
+  },
+  methods: {
+    clickEvent (selected) {
+      this.$store.commit('setProgram', selected)
+      this.$store.commit('setCh', selected.channelRemoteControl)
+      this.$router.push('/player')
     }
   }
 })
