@@ -2,7 +2,7 @@ import { GetterTree, ActionTree, MutationTree } from 'vuex'
 
 export const state = () => ({
   program: undefined,
-  ch: 0,
+  ch: 1,
   m3u8: ''
 })
 
