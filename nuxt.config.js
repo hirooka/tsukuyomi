@@ -3,12 +3,12 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // RuntimeConfig
   publicRuntimeConfig: {
+    hlsServerUsername: process.env.HLS_SERVER_USERNAME || ''
   },
 
   privateRuntimeConfig: {
     tsServerUsername: process.env.TS_SERVER_USERNAME || '',
     tsServerPassword: process.env.TS_SERVER_PASSWORD || '',
-    hlsServerUsername: process.env.HLS_SERVER_USERNAME || '',
     hlsServerPassword: process.env.HLS_SERVER_PASSWORD || ''
   },
 
@@ -62,7 +62,8 @@ export default {
 
   proxy: {
     '/api/': process.env.HLS_SERVER_URI || 'http://localhost:8080',
-    '/stream/': process.env.HLS_SERVER_URI || 'http://localhost:8080'
+    '/stream/': process.env.HLS_SERVER_URI || 'http://localhost:8080',
+    '/istream/': process.env.HLS_SERVER_URI || 'http://localhost:8080'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
