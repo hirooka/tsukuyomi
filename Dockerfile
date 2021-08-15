@@ -26,5 +26,8 @@ WORKDIR /app
 COPY --from=builder /usr/src/app  .
 
 ENV HOST 0.0.0.0
+EXPOSE 3000
+
+ENV HLS_SERVER_URI http://izanami:8080
 
 CMD [ "yarn", "start" ]
