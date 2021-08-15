@@ -1,4 +1,4 @@
-FROM node:14-slim as builder
+FROM node:16-slim as builder
 
 WORKDIR /usr/src/app
 
@@ -19,7 +19,7 @@ RUN rm -rf node_modules && \
   --non-interactive \
   --production=true
 
-FROM node:14-slim
+FROM node:16-slim
 
 WORKDIR /app
 
