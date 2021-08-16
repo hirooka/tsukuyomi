@@ -4,6 +4,10 @@
     <a href="/epg">EPG</a>
     <h2>{{ ch }}</h2>
     <video ref="video" width="100%" height="640" controls />
+    <v-btn
+      elevation="2"
+      @click="stopButtonEvent"
+    >STOP</v-btn>
   </div>
 </template>
 
@@ -55,6 +59,13 @@ export default Vue.extend({
     hls.on(Hls.Events.MANIFEST_PARSED, function () {
       (<HTMLMediaElement>video).play()
     })
+  },
+  methods: {
+    async stopButtonEvent () {
+      const path = '/api/v1/izanami/stop'
+      const response = await this.$axios.get(path)
+      logger.debug(JSON.stringify(response.data))
+    }
   }
 })
 </script>
