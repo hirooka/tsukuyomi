@@ -1,5 +1,8 @@
 FROM node:14-slim as builder
 
+# Required on Raspberry Pi (arm64) only
+#RUN apt-get update && apt-get install -y python make g++
+
 WORKDIR /usr/src/app
 
 COPY . .
