@@ -7,7 +7,9 @@
     <v-btn
       elevation="2"
       @click="stopButtonEvent"
-    >STOP</v-btn>
+    >
+      STOP
+    </v-btn>
   </div>
 </template>
 
