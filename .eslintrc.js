@@ -11,7 +11,9 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'vue/multi-word-component-names': 'off'
+  },
   // I DON'T KNOW WHY.
   // Parsing error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
   // https://github.com/vuejs/eslint-plugin-vue/issues/1343
