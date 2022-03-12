@@ -1,4 +1,4 @@
-FROM node:16-slim as builder
+FROM node:17-slim as builder
 
 # Required on Raspberry Pi (arm64) only
 #RUN apt-get update && apt-get install -y python make g++
@@ -22,7 +22,7 @@ RUN rm -rf node_modules && \
   --non-interactive \
   --production=true
 
-FROM node:16-slim
+FROM node:17-slim
 
 WORKDIR /app
 
