@@ -6,21 +6,12 @@ FROM node:16-slim as builder
 WORKDIR /usr/src/app
 
 COPY . .
-
-RUN yarn install \
-  --prefer-offline \
-  --frozen-lockfile \
-  --non-interactive \
-  --production=false
-
+COPY .yarn ./.yarn
+RUN yarn set version 3.2.0
+RUN yarn install
 RUN yarn build
-
 RUN rm -rf node_modules && \
-  NODE_ENV=production yarn install \
-  --prefer-offline \
-  --pure-lockfile \
-  --non-interactive \
-  --production=true
+  NODE_ENV=production yarn install
 
 FROM node:16-slim
 
