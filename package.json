@@ -18,7 +18,7 @@
     "hls.js": "1.2.3",
     "nuxt": "2.15.8",
     "vuetify": "2.6.3",
-    "winston": "3.6.0"
+    "winston": "3.8.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.17.0",
