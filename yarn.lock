@@ -6508,7 +6508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.4.0, eslint-plugin-vue@npm:^9.5.1":
+"eslint-plugin-vue@npm:9.5.1, eslint-plugin-vue@npm:^9.4.0":
   version: 9.5.1
   resolution: "eslint-plugin-vue@npm:9.5.1"
   dependencies:
@@ -14284,13 +14284,13 @@ __metadata:
     dayjs: 1.11.5
     eslint: 8.24.0
     eslint-plugin-nuxt: 4.0.0
-    eslint-plugin-vue: ^9.5.1
+    eslint-plugin-vue: 9.5.1
     hls.js: 1.2.4
     jest: 27.5.1
     nuxt: 2.15.8
     ts-jest: 27.1.5
     vue-jest: 3.0.7
-    vuetify: ^2.6.10
+    vuetify: 2.6.10
     winston: 3.8.2
   languageName: unknown
   linkType: soft
@@ -14958,7 +14958,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.6, vuetify@npm:^2.6.10":
+"vuetify@npm:2.6.10, vuetify@npm:^2.6":
   version: 2.6.10
   resolution: "vuetify@npm:2.6.10"
   peerDependencies:
