@@ -6458,7 +6458,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:8.7.1, eslint-plugin-vue@npm:^8.1.1":
+"eslint-plugin-vue@npm:^8.1.1":
   version: 8.7.1
   resolution: "eslint-plugin-vue@npm:8.7.1"
   dependencies:
@@ -6474,7 +6474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.4.0":
+"eslint-plugin-vue@npm:^9.4.0, eslint-plugin-vue@npm:^9.5.1":
   version: 9.5.1
   resolution: "eslint-plugin-vue@npm:9.5.1"
   dependencies:
@@ -14194,7 +14194,7 @@ __metadata:
     dayjs: 1.11.5
     eslint: 8.24.0
     eslint-plugin-nuxt: 4.0.0
-    eslint-plugin-vue: 8.7.1
+    eslint-plugin-vue: ^9.5.1
     hls.js: 1.2.4
     jest: 27.5.1
     nuxt: 2.15.8

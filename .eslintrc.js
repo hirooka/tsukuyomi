@@ -13,7 +13,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     'vue/multi-word-component-names': 'off',
-    'import/no-named-as-default-member': 'off'
+    'import/no-named-as-default-member': 'off',
+    'vue/no-v-text-v-html-on-component': 'off'
   },
   // I DON'T KNOW WHY.
   // Parsing error: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
