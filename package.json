@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "5.13.6",
     "@vue/compiler-dom": "3.2.41",
-    "core-js": "3.26.0",
+    "core-js": "3.27.1",
     "dayjs": "1.11.6",
     "hls.js": "1.2.5",
     "nuxt": "2.15.8",
