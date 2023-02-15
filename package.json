@@ -18,7 +18,7 @@
     "dayjs": "1.11.6",
     "hls.js": "1.2.5",
     "nuxt": "2.15.8",
-    "vuetify": "2.6.12",
+    "vuetify": "3.1.5",
     "winston": "3.8.2"
   },
   "devDependencies": {
