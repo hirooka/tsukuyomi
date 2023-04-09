@@ -1,0 +1,12 @@
+[Unit]
+Description=tsukuyomi
+After=syslog.target
+
+[Service]
+User=tsukuyomi
+ExecStart=/opt/tsukuyomi/.yarn/releases/yarn-3.2.3.cjs nuxt start
+WorkingDirectory=/opt/tsukuyomi
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
